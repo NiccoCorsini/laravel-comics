@@ -1,0 +1,38 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: $background-color;
+    color: $text-color;
+    font-family: $main-font;
+    height: 100vh;
+    padding-top: 90px;
+}
+
+main {
+    height: calc(100vh - 260px);
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+p {
+    margin-bottom: 1.5rem;
+}
+
+ul {
+    display: flex;
+    list-style: none;
+    li:not(:last-child) {
+        margin-right: 2rem;
+    }
+}
+
+a {
+    text-decoration: none;
+}

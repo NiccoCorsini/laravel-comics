@@ -1,0 +1,18 @@
+.comics {
+    display: grid;
+    grid-template-columns: repeat(6, 2fr);
+    grid-template-rows: repeat(2, 6fr);
+    .card {
+        @include hover;
+        cursor: pointer;
+        margin: 30px 10px 10px;
+        img {
+            width: 220px;
+            min-width: 170px;
+            margin-bottom: 20px;
+        }
+        h4 {
+            font-weight: 500;
+        }
+    }
+}

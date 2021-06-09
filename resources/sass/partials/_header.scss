@@ -1,0 +1,43 @@
+header {
+    background-color: $text-color;
+    margin-bottom: 2rem;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    .container {
+        display: flex;
+        align-items: center;
+        nav {
+            display: flex;
+            align-items: center;
+        }
+
+        img {
+            margin-right: 4rem;
+            width: 60px;
+        }
+
+        ul {
+            li {
+                line-height: 80px;
+                margin-right: 4rem;
+                a {
+                    display: block;
+                    text-transform: uppercase;
+                    font-weight: 700;
+                    color: gray;
+                    transition: all 300ms;
+                    border-bottom: 2px solid transparent;
+                    &:hover {
+                        color: $primary-color;
+                        border-bottom: 2px solid $primary-color;
+                    }
+                }
+                a.active {
+                    color: $primary-color;
+                    border-bottom: 2px solid $primary-color;
+                }
+            }
+        }
+    }
+}
